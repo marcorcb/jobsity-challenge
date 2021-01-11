@@ -16,7 +16,7 @@ final class EpisodeCell: CodedTableViewCell {
         let view = UIView()
         view.layer.cornerRadius = 10
         view.layer.borderWidth = 2
-        view.layer.borderColor = UIColor(displayP3Red: 241/250, green: 242/250, blue: 244/250, alpha: 1).cgColor
+        view.layer.borderColor = Asset.Colors.lightGray.color.cgColor
         view.clipsToBounds = true
         return view
     }()
@@ -118,7 +118,7 @@ final class EpisodeCell: CodedTableViewCell {
         episodeImageView.anchor(top: contentBackgroundView.topAnchor,
                                 left: contentBackgroundView.leftAnchor,
                                 bottom: contentBackgroundView.bottomAnchor,
-                                widthConstant: 90,
+                                widthConstant: 110,
                                 heightConstant: 90)
     }
 

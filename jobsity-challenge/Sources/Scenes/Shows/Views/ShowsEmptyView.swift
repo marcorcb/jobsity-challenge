@@ -13,7 +13,6 @@ final class ShowsEmptyView: CodedView {
 
     private let emptyLabel: UILabel = {
         let label = UILabel()
-        label.text = L10n.Shows.error
         label.font = UIFont(font: FontFamily.Gilroy.extraBold, size: 18)
         label.textColor = Asset.Colors.black.color
         label.textAlignment = .center

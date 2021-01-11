@@ -154,11 +154,11 @@ extension ShowsPresenter: ShowsPresentationLogic {
     func presentSearchResults(_ response: Shows.SearchData.Response) {
         switch response.state {
         case .error:
-            viewController?.displayShowsByState(.error)
+            viewController?.displaySearchResultsByState(.error)
         case .loading:
-            viewController?.displayShowsByState(.loading)
+            viewController?.displaySearchResultsByState(.loading)
         case .empty:
-            viewController?.displayShowsByState(.empty)
+            viewController?.displaySearchResultsByState(.empty)
         case let .content(data):
             handleSearchResults(data)
         }

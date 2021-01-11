@@ -13,11 +13,7 @@ target 'jobsity-challenge' do
 
   target 'jobsity-challengeTests' do
     inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'jobsity-challengeUITests' do
-    # Pods for testing
+    pod 'SnapshotTesting', '~> 1.8.1'
   end
 
 end
