@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  jobsity-challenge
+
+  Created by Marco Braga on 11/01/21.
+  
+*/
+
+"shows.title" = "Séries";
+"shows.error" = "Não foi possível carregar as séries";
+"shows.empty_shows" = "Sua lista de séries está vazia!";
+"shows.empty_search" = "Não foi possível encontrar um resultado :(";
+
+"show.season" = "Temporada %d";
+"show.episodes" = "%d episódios";
+
+"alert.title" = "Erro";
+"alert.message" = "Não foi possível carregar os episódios";
+"alert.confirmation" = "Ok";
