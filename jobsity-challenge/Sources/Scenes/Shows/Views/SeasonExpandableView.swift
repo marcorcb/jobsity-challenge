@@ -21,7 +21,7 @@ final class SeasonExpandableView: CodedView {
         let view = UIView()
         view.layer.cornerRadius = 10
         view.layer.borderWidth = 2
-        view.layer.borderColor = UIColor(displayP3Red: 241/250, green: 242/250, blue: 244/250, alpha: 1).cgColor
+        view.layer.borderColor = Asset.Colors.lightGray.color.cgColor
         view.addGestureRecognizer(UITapGestureRecognizer(target: self,
                                                          action: #selector(didTapContentView)))
         return view
@@ -91,15 +91,15 @@ final class SeasonExpandableView: CodedView {
     override func addSubviews() {
         addSubview(contentView)
         contentView.addSubview(seasonLabel)
-        contentView.addSubview(arrowImageView)
         contentView.addSubview(episodesLabel)
+        contentView.addSubview(arrowImageView)
     }
 
     override func constrainSubviews() {
         constrainContentView()
         constrainSeasonLabel()
-        constrainArrowImageView()
         constrainEpisodesLabel()
+        constrainArrowImageView()
     }
 
     private func constrainContentView() {
@@ -122,17 +122,17 @@ final class SeasonExpandableView: CodedView {
                            bottomConstant: 12)
     }
 
-    private func constrainArrowImageView() {
-        arrowImageView.anchor(left: seasonLabel.rightAnchor,
-                              leftConstant: 10,
-                              widthConstant: 15,
-                              heightConstant: 15)
-        arrowImageView.centerYAnchor.constraint(equalTo: seasonLabel.centerYAnchor).isActive = true
-    }
-
     private func constrainEpisodesLabel() {
         episodesLabel.anchor(right: contentView.rightAnchor,
                              rightConstant: 10)
         episodesLabel.centerYAnchor.constraint(equalTo: seasonLabel.centerYAnchor).isActive = true
+    }
+
+    private func constrainArrowImageView() {
+        arrowImageView.anchor(right: episodesLabel.leftAnchor,
+                              rightConstant: 12,
+                              widthConstant: 15,
+                              heightConstant: 15)
+        arrowImageView.centerYAnchor.constraint(equalTo: episodesLabel.centerYAnchor).isActive = true
     }
 }

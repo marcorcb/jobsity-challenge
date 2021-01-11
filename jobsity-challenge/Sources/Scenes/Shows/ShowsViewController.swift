@@ -180,7 +180,7 @@ extension ShowsViewController: UISearchBarDelegate {
         if searchText.isEmpty {
             isSearching = false
             customView.reloadTableView()
-            if showsViewData.isEmpty { displayShowsByState(.empty) }
+            customView.emptyView(isHidden: !showsViewData.isEmpty)
         } else {
             isSearching = true
             interactor.search(for: searchText)

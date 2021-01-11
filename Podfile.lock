@@ -2,12 +2,14 @@ PODS:
   - Alamofire (5.4.1)
   - Kingfisher (6.0.1)
   - PKHUD (5.3.0)
+  - SnapshotTesting (1.8.2)
   - SwiftLint (0.40.0)
 
 DEPENDENCIES:
   - Alamofire (~> 5.2)
   - Kingfisher (~> 6.0)
   - PKHUD (~> 5.0)
+  - SnapshotTesting (~> 1.8.1)
   - SwiftLint
 
 SPEC REPOS:
@@ -15,14 +17,16 @@ SPEC REPOS:
     - Alamofire
     - Kingfisher
     - PKHUD
+    - SnapshotTesting
     - SwiftLint
 
 SPEC CHECKSUMS:
   Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
   Kingfisher: adde87a4f74f6a3845395769354efff593581740
   PKHUD: 98f3e4bc904b9c916f1c5bb6d765365b5357291b
+  SnapshotTesting: 38947050d13960d57a4a9c166fcf51bca7d56970
   SwiftLint: 4154893c73a4c52d6240195507eb7a3e3c64087e
 
-PODFILE CHECKSUM: be576c09d0b58951b456882fa965bac6c544a015
+PODFILE CHECKSUM: 2c25d081dda1a74cd476783b3c237526dd0633d7
 
 COCOAPODS: 1.10.0
