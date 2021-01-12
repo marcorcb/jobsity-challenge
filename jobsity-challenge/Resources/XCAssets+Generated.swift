@@ -33,6 +33,7 @@ internal enum Asset {
     internal static let iconObTv = ImageAsset(name: "iconObTv")
     internal static let iconStar = ImageAsset(name: "iconStar")
     internal static let iconUp = ImageAsset(name: "iconUp")
+    internal static let jobsityLogo = ImageAsset(name: "jobsityLogo")
     internal static let placeholder = ImageAsset(name: "placeholder")
   }
 }

@@ -24,6 +24,16 @@ class FavoriteCoordinator: Coordinator {
     // MARK: - Public methods
 
     func start() {
+        setupTabBarController()
+    }
 
+    private func setupTabBarController() {
+        let image = Asset.Images.iconStar.image.withTintColor(Asset.Colors.black.color,
+                                                              renderingMode: .automatic)
+        navigationController.tabBarItem = UITabBarItem(
+            title: L10n.Favorites.title,
+            image: image,
+            selectedImage: image
+        )
     }
 }

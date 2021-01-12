@@ -17,3 +17,5 @@
 "alert.title" = "Error";
 "alert.message" = "Failed to load episodes";
 "alert.confirmation" = "Ok";
+
+"favorites.title" = "Favorites";

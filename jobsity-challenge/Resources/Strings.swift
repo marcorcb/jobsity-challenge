@@ -20,6 +20,11 @@ internal enum L10n {
     internal static let title = L10n.tr("Localizable", "alert.title")
   }
 
+  internal enum Favorites {
+    /// Favorites
+    internal static let title = L10n.tr("Localizable", "favorites.title")
+  }
+
   internal enum Show {
     /// %d episodes
     internal static func episodes(_ p1: Int) -> String {

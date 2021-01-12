@@ -17,3 +17,5 @@
 "alert.title" = "Erro";
 "alert.message" = "Não foi possível carregar os episódios";
 "alert.confirmation" = "Ok";
+
+"favorites.title" = "Favoritos";
